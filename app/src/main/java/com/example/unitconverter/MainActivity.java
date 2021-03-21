@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     unit1 = spinner.getSelectedItem().toString();
                     unit2 = spinner2.getSelectedItem().toString();
                     val = Double.parseDouble(s);
-                    if (s.equals(null)) {
+                    if (s.isEmpty()) {
                         Toast.makeText(MainActivity.this, "Please enter a value", Toast.LENGTH_SHORT).show();
                     } else if (unit1.equals(unit2)) {
                         s = String.valueOf(val);
